@@ -1,0 +1,23 @@
+{
+  "name": "udevs-icons",
+  "version": "1.0.0",
+  "description": "Udevs custom icon sets. Beta version",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SAIDAKBAR123/udevs-icons.git"
+  },
+  "keywords": [
+    "udevs",
+    "icons"
+  ],
+  "author": "Saidakbar Makhmudkhujaev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SAIDAKBAR123/udevs-icons/issues"
+  },
+  "homepage": "https://github.com/SAIDAKBAR123/udevs-icons#readme"
+}

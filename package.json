@@ -1,10 +1,15 @@
 {
   "name": "udevs-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Udevs custom icon sets. Beta version",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "export": "figma-export use-config figma.config.js",
+    "clean": "rimraf outline solid package *.tgz",
+    "np": "np",
+    "release": "run-s build np",
+    "build": "run-s clean export"
   },
   "repository": {
     "type": "git",
@@ -14,10 +19,22 @@
     "udevs",
     "icons"
   ],
+  "files": [
+    "solid/"
+  ],
   "author": "Saidakbar Makhmudkhujaev",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SAIDAKBAR123/udevs-icons/issues"
   },
-  "homepage": "https://github.com/SAIDAKBAR123/udevs-icons#readme"
+  "homepage": "https://github.com/SAIDAKBAR123/udevs-icons#readme",
+  "devDependencies": {
+    "@figma-export/cli": "^4.2.0",
+    "@figma-export/output-components-as-svg": "^4.2.0",
+    "@figma-export/transform-svg-with-svgo": "^4.2.0",
+    "dotenv": "^16.0.0",
+    "np": "^7.6.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  }
 }
